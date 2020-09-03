@@ -1,0 +1,211 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>JavaScript_C2</title>
+  </head>
+  <body>
+    <section class="service">
+    	<div class="container">
+    		<div class="row justify-content-center" id="row1">
+    			<div class="col-md-12 text-center rounded border border-info">
+            		<h1>Click the button to get more <strong>information</strong>.</h1>
+            		<button type="button" class="btn btn-outline-dark" onclick="textChange()">Click Me!</button>
+            		<button type="button" class="btn btn-outline-warning" onclick="window.location.reload();">Refresh</button>
+            		<p>
+            			<div class="alert alert-warning alert-dismissible fade show border border-success" id="p" role="alert">
+  							Hello, I am <strong>Arif Mahmud</strong>. Hope you are doing well.
+  							<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    							<span aria-hidden="true">&times;</span>
+  							</button>
+						</div>
+            		</p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 c1">
+                <button type="button" class="btn btn-outline-success b1">Hide & Show</button>
+                <button type="button" class="btn btn-outline-danger b2">Hide</button>
+                <button type="button" class="btn btn-outline-warning b3">Show</button>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="card bg-light mb-3 p5" style="max-width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Light card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card bg-light mb-3 p6" style="max-width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Light card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row c1">
+            <div class="col-md-3">
+                <button type="button" class="btn btn-outline-success" id="x1">Hide</button>
+                <p id="x2">This is a paragraph with little content.</p>
+            </div>
+            <div class="col-md-3">
+                <button type="button" class="btn btn-outline-success" id="x3">Hide</button>
+                <p id="x4">This is a paragraph with little content.</p>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-6">
+                        <button type="button" class="btn btn-outline-info" id="y1">Start Animation</button>
+                        <p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div id="y2" style="background:mediumvioletred;height:100px;width:100px;position:absolute;"></div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card c1">
+          <div class="card-body">
+            <p class="t1">If you click on me, I will disappear.</p>
+            <p class="t1">Click me away!</p>
+            <p class="t1">Click me too!</p>
+          </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row c1">
+          <div class="col-sm-3">
+            <div class="card bg-light mb-3" id="p1" style="max-width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Light card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card text-white bg-dark mb-3" id="p2" style="max-width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Dark card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card text-white bg-secondary mb-3" id="p3" style="max-width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Secondary card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+              <div class="card border-secondary mb-3" id="p4" style="max-width: 18rem;">
+                  <div class="card-body text-secondary">
+                    <h5 class="card-title">Secondary card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+          </div>    
+        </div>
+    </div>
+    <div class="container">
+        <div class="row c1">
+            <div class="col-md-3">
+                <button id="stop" type="button" class="btn btn-outline-warning">Stop sliding</button><br>
+                <div id="flip">Click to slide down panel</div>
+                <div id="panel">Hello world!</div>
+            </div>
+            <div class="col-md-3">
+                <p id="y3">jQuery is fun!!</p>
+                <button type="button" class="btn btn-outline-warning" id="y4">Click me</button>
+            </div>
+            <div class="col-sm-3">
+                <div id="y6" style="height:120px;width:250px;border:1px solid black;background-color:tomato;" class="rounded">
+                    This is some text in the div.
+                    <p>This is a paragraph in the div.</p>
+                    <p>This is another paragraph in the div.</p>
+                </div>
+                <br>
+                <button id="y5" type="button" class="btn btn-outline-success">Empty the div element</button>
+          </div>
+          <div class="col-md-3">
+            <img id="q1" src="img/javascript.png" alt="jQuery" width="100" height="140">
+            <p>Click the button to insert text after the image.</p>
+            <button type="button" class="btn btn-outline-warning" onclick="afterText()">Insert after</button>
+          </div>    
+        </div>
+    </div> 
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <form>
+                  <div class="row">
+                    <div class="col">
+                      <input type="text" class="form-control form-control-sm" id="f1" placeholder="First name">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control form-control-sm" id="f1" placeholder="Last name">
+                    </div>
+                  </div>
+                </form>
+            </div>
+        </div>
+    </div>  
+    <div class="container">
+      <div class="row">
+        <div class="col">
+            <p>Demonstrate fadeTo() with different parameters.</p>
+            <button type="button" class="btn btn-outline-success" id="x5">Click to fade boxes</button><br><br>
+            <div id="div1" class="rounded" style="width:80px;height:80px;background-color:mediumturquoise;"></div><br>
+            <div id="div2" class="rounded" style="width:80px;height:80px;background-color:darkmagenta;"></div><br>
+            <div id="div3" class="rounded" style="width:80px;height:80px;background-color:mediumvioletred;"></div>
+        </div>
+        <div class="col">
+            <p>Demonstrate fadeToggle() with different speed parameters.</p>
+            <button type="button" class="btn btn-outline-success" id="x6">Click to fade in/out boxes</button><br><br>
+            <div id="div4" class="rounded" style="width:80px;height:80px;background-color:mediumturquoise;"></div><br>
+            <div id="div5" class="rounded" style="width:80px;height:80px;background-color:darkmagenta;"></div><br>
+            <div id="div6" class="rounded" style="width:80px;height:80px;background-color:mediumvioletred;"></div>
+        </div>
+        <div class="col">
+            <p>Demonstrate fadeOut() with different parameters.</p>
+            <button type="button" class="btn btn-outline-success" id="x7">Click to fade out boxes</button><br><br>
+            <div id="div7" class="rounded" style="width:80px;height:80px;background-color:mediumturquoise;"></div><br>
+            <div id="div8" class="rounded" style="width:80px;height:80px;background-color:darkmagenta;"></div><br>
+            <div id="div9" class="rounded" style="width:80px;height:80px;background-color:mediumvioletred;"></div>
+        </div>
+        <div class="col">
+            <p>Demonstrate fadeIn() with different parameters.</p>
+            <button type="button" class="btn btn-outline-success" id="x8">Click to fade in boxes</button><br><br>
+            <div id="div10" class="rounded" style="width:80px;height:80px;display:none;background-color:mediumturquoise;"></div><br>
+            <div id="div11" class="rounded" style="width:80px;height:80px;display:none;background-color:darkmagenta;"></div><br>
+            <div id="div12" class="rounded" style="width:80px;height:80px;display:none;background-color:mediumvioletred;"></div>
+        </div>
+      </div>
+    </div>  
+     
+    <!-- js links-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
